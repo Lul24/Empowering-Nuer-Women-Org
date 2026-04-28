@@ -172,7 +172,6 @@
             <p>Follow us on social media for updates and impact stories:</p>
             <div class="footer-social" style="justify-content: flex-start;">
               <a href="https://facebook.com/empoweringnuerwomen" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <!-- Fixed: Changed fa-x-twitter to fa-twitter -->
               <a href="https://twitter.com/empoweringnuerwomen" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
               <a href="https://instagram.com/empoweringnuerwomen" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
               <a href="https://linkedin.com/company/empoweringnuerwomen" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -190,7 +189,10 @@
           <h2>Contact Form</h2>
           <p>Fields marked with * are required</p>
           
-          <form class="contact-form" id="contactForm">
+          <!-- UPDATED: Added netlify and hidden input -->
+          <form class="contact-form" id="contactForm" netlify>
+            <input type="hidden" name="form-name" value="contact">
+            
             <div class="form-row">
               <div class="form-group" id="firstNameGroup">
                 <label for="firstName" class="required">First Name</label>
@@ -247,7 +249,6 @@
               <div class="error-message">You must agree to the terms</div>
             </div>
             
-            <!-- Fixed: Changed btn-primary to btn btn-primary -->
             <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
               <i class="fas fa-paper-plane"></i> Send Message
             </button>
