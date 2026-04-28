@@ -188,7 +188,10 @@
       </div>
       
       <div class="form-container fade-up">
-        <form id="jobApplicationForm">
+        <!-- UPDATED: Added netlify and hidden input -->
+        <form id="jobApplicationForm" netlify>
+          <input type="hidden" name="form-name" value="careers">
+          
           <div class="form-group">
             <label>Position Applying For *</label>
             <select id="position" required>
